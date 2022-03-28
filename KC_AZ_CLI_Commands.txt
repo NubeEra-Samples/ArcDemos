@@ -12,3 +12,42 @@ Install Azure CLI
     sudo tee /etc/apt/sources.list.d/azure-cli.list
 7. sudo apt-get update
 8. sudo apt-get install azure-cli
+
+
+					Azure CLI & Arc
+					=============
+
+Authenticate:
+-----------------
+az login
+	microsoft.com/devicelogin	HNIU234HXD
+
+Register Providers
+----------------------
+az provider register --namepsace Microsoft.Kubernetes
+az provider register --namepsace Microsoft.KubernetesConfiguration
+
+Add extensions
+-------------------
+az extension add --name connectedk8s
+az extension add --name k8sconfiguration
+
+Modules Install:
+--------------------
+Install-Module Azure
+Import-Module Azure
+
+Install-Module AzureARM
+Import-Module AzureARM
+
+
+ARM Group to Deploy Template
+-------------------------------------
+New-AzureRMResourceGroup 
+	-Name argKubeCluster
+	-TemplateUri https://raw.githubusercontent.com/NubeEra-Samples/ArcDemos/main/azuredeploy.json
+
+
+
+
+
