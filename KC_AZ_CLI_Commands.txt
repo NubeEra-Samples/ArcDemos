@@ -24,8 +24,8 @@ az login
 
 Register Providers
 ----------------------
-az provider register --namepsace Microsoft.Kubernetes
-az provider register --namepsace Microsoft.KubernetesConfiguration
+az provider register --namespace Microsoft.Kubernetes
+az provider register --namespace Microsoft.KubernetesConfiguration
 
 Add extensions
 -------------------
