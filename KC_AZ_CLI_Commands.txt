@@ -14,8 +14,8 @@ Install Azure CLI
 8. sudo apt-get install azure-cli
 
 
-					Azure CLI & Arc
-					=============
+					Azure CLI
+					========
 
 Authenticate:
 -----------------
