@@ -1,0 +1,22 @@
+Check List of Arc-K8S
+=====================
+az connectedk8s list -o table
+
+
+Create AKC(Arc-Kubernetes Cluster)
+==================================
+az k8sconfiguration create \
+    --name cluster-config \
+    --cluster-name arc-demo-ec2 \
+    --resource-group arc-demo-clusters \
+    --operator-instance-name cluster-config \
+    --operator-namespace cluster-config \
+    --repository-url https://github.com/NubeEra-Samples/ArcGitOpsFlux \
+    --scope cluster \
+    --cluster-type connectedClusters
+
+Connect to AKC
+==============
+az connectedk8s connect \
+ --name arc-demo-ec2 \
+ --resource-group arc-demo-clusters
