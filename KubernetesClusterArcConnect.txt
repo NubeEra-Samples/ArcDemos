@@ -1,12 +1,16 @@
 Check Application Deployed?
 ===========================
 kubectl get namespace               OR   kubectl get ns
-kubectl get pods
+
+Syntax:
+kubectl get pods --namespace <YOURNAMESPACE>
+
+Example:
+kubectl get pods --namespace kube-system
 
 Check List of Arc-K8S
 =====================
 az connectedk8s list -o table
-
 
 Create AKC(Arc-Kubernetes Cluster)
 ==================================
