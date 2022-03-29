@@ -1,9 +1,8 @@
 docker
 =====
 apt install docker.io
+sudo adduser newUser --force-badname
 sudo usermod -aG docker $USER && newgrp docker
-
-
 
 minikube
 ========
@@ -13,6 +12,7 @@ sudo cp minikube-linux-amd64 /usr/local/bin/minikube
 sudo chmod 755 /usr/local/bin/minikube
 minikube version
 minikube start --driver=docker
+minikube status
 
 helm
 ====

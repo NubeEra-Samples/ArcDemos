@@ -1,3 +1,8 @@
+Check Application Deployed?
+===========================
+kubectl get namespace               OR   kubectl get ns
+kubectl get pods
+
 Check List of Arc-K8S
 =====================
 az connectedk8s list -o table
